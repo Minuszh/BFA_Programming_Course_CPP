@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		120F302C2ACAC6FA000FF402 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120F302B2ACAC6FA000FF402 /* main.cpp */; };
+		12BC82C42AD250F500553610 /* Playground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12BC82C32AD250F500553610 /* Playground.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +27,9 @@
 		120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BFA_Programming_Course_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		120F302B2ACAC6FA000FF402 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		123F9BCD2ACAD60D00D080AC /* Lecture_02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_02.md; sourceTree = "<group>"; };
+		126E54D92ADFB8C600300DA5 /* Lecture_04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Lecture_04.md; path = BFA_Programming_Course_CPP/Lecture_02/Lecture_04.md; sourceTree = SOURCE_ROOT; };
 		128B34192ACAD38A0084B59D /* hello_world.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello_world.cpp; sourceTree = "<group>"; };
+		12BC82C32AD250F500553610 /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,11 +62,31 @@
 		120F302A2ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {
 			isa = PBXGroup;
 			children = (
+				12BC82C32AD250F500553610 /* Playground.cpp */,
 				120F302B2ACAC6FA000FF402 /* main.cpp */,
+				126E54D82ADFB89A00300DA5 /* Lecture_03 */,
+				126E54D72ADFB89A00300DA5 /* Lecture_04 */,
 				128B34152ACAD3110084B59D /* Lecture_02 */,
 			);
 			path = BFA_Programming_Course_CPP;
 			sourceTree = "<group>";
+		};
+		126E54D72ADFB89A00300DA5 /* Lecture_04 */ = {
+			isa = PBXGroup;
+			children = (
+				126E54D92ADFB8C600300DA5 /* Lecture_04.md */,
+			);
+			name = Lecture_04;
+			path = BFA_Programming_Course_CPP/Lecture_04;
+			sourceTree = SOURCE_ROOT;
+		};
+		126E54D82ADFB89A00300DA5 /* Lecture_03 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lecture_03;
+			path = BFA_Programming_Course_CPP/Lecture_03;
+			sourceTree = SOURCE_ROOT;
 		};
 		128B34152ACAD3110084B59D /* Lecture_02 */ = {
 			isa = PBXGroup;
@@ -131,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12BC82C42AD250F500553610 /* Playground.cpp in Sources */,
 				120F302C2ACAC6FA000FF402 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
