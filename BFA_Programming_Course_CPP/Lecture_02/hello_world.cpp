@@ -5,6 +5,7 @@
 //  Created by Minus on 2023/10/2.
 //
 
+#include <stdio.h>
 #include <iostream>
 using namespace std;
 

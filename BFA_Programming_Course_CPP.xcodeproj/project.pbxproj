@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		120F302C2ACAC6FA000FF402 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 120F302B2ACAC6FA000FF402 /* main.cpp */; };
+		126582D82AE21D3600941873 /* 03_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582D72AE21D3600941873 /* 03_1.cpp */; };
+		126582DA2AE21D4500941873 /* 03_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582D92AE21D4500941873 /* 03_2.cpp */; };
+		126582DC2AE21D5600941873 /* 03_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582DB2AE21D5600941873 /* 03_3.cpp */; };
+		126582DF2AE21D6300941873 /* 03_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582DD2AE21D6300941873 /* 03_4.cpp */; };
+		126582E12AE21D7700941873 /* 03_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582E02AE21D7700941873 /* 03_5.cpp */; };
+		126582E32AE21D8800941873 /* 03_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582E22AE21D8800941873 /* 03_6.cpp */; };
+		126582E52AE21D9600941873 /* 03_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582E42AE21D9600941873 /* 03_7.cpp */; };
 		12BC82C42AD250F500553610 /* Playground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12BC82C32AD250F500553610 /* Playground.cpp */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +34,13 @@
 		120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BFA_Programming_Course_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		120F302B2ACAC6FA000FF402 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		123F9BCD2ACAD60D00D080AC /* Lecture_02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_02.md; sourceTree = "<group>"; };
+		126582D72AE21D3600941873 /* 03_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_1.cpp; sourceTree = "<group>"; };
+		126582D92AE21D4500941873 /* 03_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_2.cpp; sourceTree = "<group>"; };
+		126582DB2AE21D5600941873 /* 03_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_3.cpp; sourceTree = "<group>"; };
+		126582DD2AE21D6300941873 /* 03_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_4.cpp; sourceTree = "<group>"; };
+		126582E02AE21D7700941873 /* 03_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_5.cpp; sourceTree = "<group>"; };
+		126582E22AE21D8800941873 /* 03_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_6.cpp; sourceTree = "<group>"; };
+		126582E42AE21D9600941873 /* 03_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_7.cpp; sourceTree = "<group>"; };
 		126E54D92ADFB8C600300DA5 /* Lecture_04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Lecture_04.md; path = BFA_Programming_Course_CPP/Lecture_02/Lecture_04.md; sourceTree = SOURCE_ROOT; };
 		128B34192ACAD38A0084B59D /* hello_world.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello_world.cpp; sourceTree = "<group>"; };
 		12BC82C32AD250F500553610 /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = SOURCE_ROOT; };
@@ -75,6 +89,13 @@
 			isa = PBXGroup;
 			children = (
 				126E54D92ADFB8C600300DA5 /* Lecture_04.md */,
+				126582D72AE21D3600941873 /* 03_1.cpp */,
+				126582D92AE21D4500941873 /* 03_2.cpp */,
+				126582DB2AE21D5600941873 /* 03_3.cpp */,
+				126582DD2AE21D6300941873 /* 03_4.cpp */,
+				126582E02AE21D7700941873 /* 03_5.cpp */,
+				126582E22AE21D8800941873 /* 03_6.cpp */,
+				126582E42AE21D9600941873 /* 03_7.cpp */,
 			);
 			name = Lecture_04;
 			path = BFA_Programming_Course_CPP/Lecture_04;
@@ -154,8 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126582E52AE21D9600941873 /* 03_7.cpp in Sources */,
+				126582D82AE21D3600941873 /* 03_1.cpp in Sources */,
+				126582E32AE21D8800941873 /* 03_6.cpp in Sources */,
+				126582DA2AE21D4500941873 /* 03_2.cpp in Sources */,
 				12BC82C42AD250F500553610 /* Playground.cpp in Sources */,
+				126582E12AE21D7700941873 /* 03_5.cpp in Sources */,
+				126582DF2AE21D6300941873 /* 03_4.cpp in Sources */,
 				120F302C2ACAC6FA000FF402 /* main.cpp in Sources */,
+				126582DC2AE21D5600941873 /* 03_3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
