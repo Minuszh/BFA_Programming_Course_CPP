@@ -10,6 +10,42 @@
 //
 //  Created by Minus on 2023/10/20.
 //
-//  Status:Has Not Started
+//  Status:Completed
 //
 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    
+    int a(0),b(0),c(0);
+    
+    int status(0);
+    
+    printf("请输入a,b,c: ");
+    cin >> a >> b >> c ;
+    
+    int delta(0);
+    delta = b*b-4*a*c;
+    //  根的判别式
+    
+    if(a==0){
+        cout<<"a为0";
+    }
+    
+    if(delta>0){
+        cout<<"有两个不同实根";
+    }
+    
+    if(delta<0){
+        cout<<"无实根";
+    }
+    
+    if(delta==0){
+        cout<<"两个相同实根";
+    }
+    
+    return 0;
+    
+}

@@ -30,7 +30,7 @@ int main(){
     
     switch (remainder) {
         case 1:
-            TheDayInThisWeekIs = "Monday"; 
+            TheDayInThisWeekIs = "Monday";
             break;
             
         case 2:

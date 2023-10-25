@@ -45,7 +45,7 @@ void printReverseNum(int num){
 
 int main()
 {
-
+    
     int a(0);
     
     printf("请输入一个整数: ");
@@ -57,7 +57,7 @@ int main()
     printReverseNum(a);
     
     return 0;
-
+    
 }
 
 //主函数，收集数字&返回结果

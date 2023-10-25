@@ -16,7 +16,7 @@ using namespace std;
 
 int main()
 {
-
+    
     int a(0),b(0);
     
     printf("请输入两个整数: ");
@@ -30,5 +30,5 @@ int main()
         cout << "They are the same" << endl;
     
     return 0;
-
+    
 }

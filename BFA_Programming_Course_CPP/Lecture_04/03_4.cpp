@@ -22,8 +22,10 @@ void makeOneLayer(int Layer,int numOfLayer){
     int numOfStar(0),numOfSpace(0);
     
     numOfStar = Layer*2-1;
+    //星星的数量
     
     numOfSpace = numOfLayer - Layer;
+    //空格的数量
     
     int count(1);
     
@@ -33,6 +35,7 @@ void makeOneLayer(int Layer,int numOfLayer){
         count++;
         
     }
+    //输出星星
     
     count = 1;
     
@@ -42,6 +45,7 @@ void makeOneLayer(int Layer,int numOfLayer){
         count++;
         
     }
+    //输出空格
     
     cout<<endl;
 }

@@ -8,5 +8,39 @@
 //
 //  Created by Minus on 2023/10/20.
 //
-//  Status:Has Not Started
+//  Status:Completed
 //
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    
+    int max(300),min(200);
+    bool isPrime(0);
+    int num=min;
+    
+    while (num<=max) {
+        for(int i = 2; i <= num / 2; ++i){
+            
+            isPrime = 1;
+            
+            if (num % i == 0)
+            {
+                isPrime = false;
+                break;
+            }
+        }
+        
+        //判定是否为质数
+        
+        if (isPrime) {
+            cout<<num<<endl;
+        }
+        
+        num++;
+        
+    }
+    
+    return 0;
+}
