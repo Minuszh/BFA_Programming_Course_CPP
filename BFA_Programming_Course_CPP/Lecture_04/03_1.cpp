@@ -8,8 +8,9 @@
 //
 //  Created by Minus on 2023/10/20.
 //
+//  Status:Completed
+//
 
-#include <stdio.h>
 #include <iostream>
 using namespace std;
 
@@ -18,7 +19,7 @@ int main()
 
     int a(0),b(0);
     
-    printf("输入两个整数: ");
+    printf("请输入两个整数: ");
     cin >> a >> b;
     
     if(a>=b)

@@ -8,6 +8,8 @@
 //
 //  Created by Minus on 2023/10/20.
 //
+//  Status:Completed
+//
 
 #include <stdio.h>
 #include <iostream>
@@ -17,6 +19,7 @@ int main(){
     
     unsigned int a(0);
     
+    printf("请输入日期: ");
     cin >> a;
     
     int remainder(0);

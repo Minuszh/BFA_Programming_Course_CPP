@@ -8,6 +8,8 @@
 //
 //  Created by Minus on 2023/10/20.
 //
+//  Status:Completed
+//
 
 #include <stdio.h>
 #include <iostream>
@@ -28,11 +30,14 @@ int getDigits(int num) {
 
 void printReverseNum(int num){
     
-    int count = 0;
-    do{
-        
-        count++;
-    }while(count<=getDigits(num));
+    int count = getDigits(num);
+    
+    while(count>0){
+        int digit = num % 10;
+        cout << digit;
+        num /= 10;
+        count--;
+    }
     
 }
 
@@ -43,6 +48,7 @@ int main()
 
     int a(0);
     
+    printf("请输入一个整数: ");
     cin >> a;
     
     cout << "该数有" << getDigits(a) << "位" << endl;
