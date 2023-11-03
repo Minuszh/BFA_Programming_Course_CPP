@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		121E386D2AE93AFF00C50016 /* 03_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 126582E42AE21D9600941873 /* 03_7.cpp */; };
+		12D5BAF92AF49889001A9839 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +36,8 @@
 		126E54D92ADFB8C600300DA5 /* Lecture_04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Lecture_04.md; path = BFA_Programming_Course_CPP/Lecture_02/Lecture_04.md; sourceTree = SOURCE_ROOT; };
 		128B34192ACAD38A0084B59D /* hello_world.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello_world.cpp; sourceTree = "<group>"; };
 		12BC82C32AD250F500553610 /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = SOURCE_ROOT; };
+		12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TowerOfHanoi.cpp; sourceTree = "<group>"; };
+		12D5BAF72AF491C4001A9839 /* FibonacciSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciSequence.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			children = (
 				12BC82C32AD250F500553610 /* Playground.cpp */,
 				120F302B2ACAC6FA000FF402 /* main.cpp */,
+				12D5BAF42AF490FE001A9839 /* Lecture_06 */,
 				126E54D82ADFB89A00300DA5 /* Lecture_03 */,
 				126E54D72ADFB89A00300DA5 /* Lecture_04 */,
 				128B34152ACAD3110084B59D /* Lecture_02 */,
@@ -109,6 +112,16 @@
 			);
 			path = Lecture_02;
 			sourceTree = "<group>";
+		};
+		12D5BAF42AF490FE001A9839 /* Lecture_06 */ = {
+			isa = PBXGroup;
+			children = (
+				12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */,
+				12D5BAF72AF491C4001A9839 /* FibonacciSequence.cpp */,
+			);
+			name = Lecture_06;
+			path = BFA_Programming_Course_CPP/Lecture_06;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -167,7 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				121E386D2AE93AFF00C50016 /* 03_7.cpp in Sources */,
+				12D5BAF92AF49889001A9839 /* TowerOfHanoi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
