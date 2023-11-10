@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12D5BAF92AF49889001A9839 /* TowerOfHanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */; };
+		12BAE36F2AFDCDAF00AA2519 /* 04_4_CaseConversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1205EEE02AFDC3280090312A /* 04_4_CaseConversion.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,6 +23,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1205EEDD2AFDC2B90090312A /* 04_3_CalculateLogarithm.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_3_CalculateLogarithm.cpp; sourceTree = "<group>"; };
+		1205EEE02AFDC3280090312A /* 04_4_CaseConversion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_4_CaseConversion.cpp; sourceTree = "<group>"; };
+		1205EEE32AFDC3A70090312A /* 04_5_Scholarship.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_5_Scholarship.cpp; sourceTree = "<group>"; };
+		1205EEE52AFDC3EF0090312A /* 04_6_JosephProblem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_6_JosephProblem.cpp; sourceTree = "<group>"; };
+		1205EEE82AFDC4480090312A /* 04_7_EightQueens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_7_EightQueens.cpp; sourceTree = "<group>"; };
 		120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BFA_Programming_Course_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		120F302B2ACAC6FA000FF402 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		123F9BCD2ACAD60D00D080AC /* Lecture_02.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_02.md; sourceTree = "<group>"; };
@@ -35,9 +40,10 @@
 		126582E42AE21D9600941873 /* 03_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 03_7.cpp; sourceTree = "<group>"; };
 		126E54D92ADFB8C600300DA5 /* Lecture_04.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Lecture_04.md; path = BFA_Programming_Course_CPP/Lecture_02/Lecture_04.md; sourceTree = SOURCE_ROOT; };
 		128B34192ACAD38A0084B59D /* hello_world.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = hello_world.cpp; sourceTree = "<group>"; };
+		12BAE3702AFDCDD800AA2519 /* Lecture_06.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_06.md; sourceTree = "<group>"; };
 		12BC82C32AD250F500553610 /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = SOURCE_ROOT; };
-		12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TowerOfHanoi.cpp; sourceTree = "<group>"; };
-		12D5BAF72AF491C4001A9839 /* FibonacciSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FibonacciSequence.cpp; sourceTree = "<group>"; };
+		12D5BAF52AF49139001A9839 /* 04_1_TowerOfHanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_1_TowerOfHanoi.cpp; sourceTree = "<group>"; };
+		12D5BAF72AF491C4001A9839 /* 04_2_FibonacciSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_2_FibonacciSequence.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +122,14 @@
 		12D5BAF42AF490FE001A9839 /* Lecture_06 */ = {
 			isa = PBXGroup;
 			children = (
-				12D5BAF52AF49139001A9839 /* TowerOfHanoi.cpp */,
-				12D5BAF72AF491C4001A9839 /* FibonacciSequence.cpp */,
+				12D5BAF52AF49139001A9839 /* 04_1_TowerOfHanoi.cpp */,
+				12D5BAF72AF491C4001A9839 /* 04_2_FibonacciSequence.cpp */,
+				1205EEDD2AFDC2B90090312A /* 04_3_CalculateLogarithm.cpp */,
+				1205EEE02AFDC3280090312A /* 04_4_CaseConversion.cpp */,
+				1205EEE32AFDC3A70090312A /* 04_5_Scholarship.cpp */,
+				1205EEE52AFDC3EF0090312A /* 04_6_JosephProblem.cpp */,
+				1205EEE82AFDC4480090312A /* 04_7_EightQueens.cpp */,
+				12BAE3702AFDCDD800AA2519 /* Lecture_06.md */,
 			);
 			name = Lecture_06;
 			path = BFA_Programming_Course_CPP/Lecture_06;
@@ -180,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12D5BAF92AF49889001A9839 /* TowerOfHanoi.cpp in Sources */,
+				12BAE36F2AFDCDAF00AA2519 /* 04_4_CaseConversion.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
