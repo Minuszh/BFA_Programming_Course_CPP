@@ -25,6 +25,7 @@ void move(int numDisks, string init, string temp, string desti)
     if(numDisks == 1)
         moveOne(1, init, desti);
     else
+    
     {
          
         move(numDisks-1, init, desti, temp);
