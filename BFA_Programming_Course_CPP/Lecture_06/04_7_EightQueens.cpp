@@ -47,7 +47,7 @@ int main() {
         int b;
         cin >> b;
         for (int j = 0; j < 8; ++j) {
-            cout << solutions[b - 1][j];
+            cout << solutions[b - 1][j] + 1; // 输出对应于b的皇后串
         }
         cout << endl;
     }
