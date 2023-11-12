@@ -40,12 +40,13 @@ int getNum(int NumberofNumber){
     return value;
     
 }
+// 获取某一阶段的数字
 
 int main(){
 
-    int n;
+    int n;// 层数
     cin >> n;
-    int results[n];
+    int results[n];// 存储数据用数列
     
     for (int i = 0; i < n; i++) {
         int a;

@@ -8,7 +8,7 @@
 //
 //  Created by Minus on 2023/11/10.
 //
-//  Status:Wrong Answer
+//  Status:Completed
 //
 
 #include <iostream>
@@ -17,25 +17,31 @@
 using namespace std;
 
 int main(){
-
-    int a,b;
+    
+    long double a,b;
     cin >> a >> b;
     
-    double logAB = log(a)/log(b);
-    
-    int x=1;
-    
-    while(x<=20){
-        
-        x++;
-        
-        if( (x<=logAB && (x+1)>logAB) || (pow(a, x)<=b && b<=pow(a, x+1)) )
-            break;
-        
-    }
-    
-    cout << x ;
+    cout<<(floor)(log(b)/log(a))<<endl;
     
     return 0;
     
 }
+
+//
+//    long double logAB = log(b)/log(a);
+//
+//    double x=0;
+//
+//    while(x<20){
+//
+//        x++;
+//
+//        //cout<<x<<" "<<logAB<<" "<<pow(a, x)<<" "<<pow(a, x+1)<<endl;
+//
+//        if( (x<=logAB && (x+1)>logAB) || (pow(a, x)<=b && b<=pow(a, x+1)) )
+//            break;
+//
+//    }
+//
+//    cout << x ;
+//
