@@ -13,30 +13,34 @@
 
 #include <iostream>
 #include <vector>
+#include <string>
 using namespace std;
 
 struct Student {
     string name;
-    int averageScore;// 期末平均成绩
-    int classScore;// 班级评议成绩
-    bool isCadre;// 是否是学生干部
-    bool fromWestern;// 是否来自西部省份
-    int publishedPapers;// 发表的论文数
-    int scholarship;// 奖学金总数
+    int averageScore;  // 期末平均成绩
+    int classScore;     // 班级评议成绩
+    bool isCadre;       // 是否是学生干部
+    bool fromWestern;   // 是否来自西部省份
+    int publishedPapers;  // 发表的论文数
+    int scholarship;    // 奖学金总数
 };
 
 int main() {
-
     int n;  // 学生人数
     cin >> n;
+    cin.ignore(); // 清除换行符
 
     vector<Student> students(n);  // 定义多组学生数据
 
     // 输入学生信息
     for (int i = 0; i < n; i++) {
-        cin >> students[i].name >> students[i].averageScore >> students[i].classScore
-            >> students[i].isCadre >> students[i].fromWestern >> students[i].publishedPapers;
-
+        cin >> students[i].name >> students[i].averageScore >> students[i].classScore;
+        char isCadre, fromWestern;
+        cin >> isCadre >> fromWestern >> students[i].publishedPapers;
+        cin.ignore(); // 清除换行符
+        students[i].isCadre = (isCadre == 'Y');
+        students[i].fromWestern = (fromWestern == 'Y');
         students[i].scholarship = 0;  // 初始化奖学金总数
     }
 
@@ -73,10 +77,10 @@ int main() {
         }
     }
 
-    // 输出结果，第一行是获得最多奖金的学生的姓名，第二行是这名学生获得的奖金总数。如果有两位或两位以上的学生获得的奖金最多，输出他们之中在输入文件中出现最早的学生的姓名。第三行是这N个学生获得的奖学金的总数
-    cout << topStudentName << endl;
-    cout << maxScholarship << endl;
-    cout << totalScholarship << endl;
+    // 输出结果
+    cout << topStudentName << endl;  // 输出获得最多奖金的学生的姓名
+    cout << maxScholarship << endl;   // 输出这名学生获得的奖金总数
+    cout << totalScholarship << endl; // 输出这N个学生获得的奖学金的总数
 
     return 0;
 }
