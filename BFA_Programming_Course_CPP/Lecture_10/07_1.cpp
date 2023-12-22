@@ -4,75 +4,66 @@
 //
 //  编写一个程序，完成下列操作：
 //  （1）加载并显示一张图像（cv:imread, cv: Mat, cv:imshow），等待键盘输入（cv:waitkey（n）），输入"Esc”退出；
-//  （2） 加载一个视频（cv：：VideoCapture），使用while循环读取视频帧，输入"Esc”退出；
-//  （3） 开启计算机摄像头（cv：：VideoCapture）捕获视频，使用while循环读取视频帧，输入"Ess"退出
+//  （2）加载一个视频（cv：：VideoCapture），使用while循环读取视频帧，输入"Esc”退出；
+//  （3）开启计算机摄像头（cv：：VideoCapture）捕获视频，使用while循环读取视频帧，输入"Ess"退出
 //
 //  Created by Minus on 2023/12/16.
 //
 
+#include <iostream>
 #include <opencv2/opencv.hpp>
 
-int main() {
-    // (1) 加载并显示一张图像
-    cv::Mat image = cv::imread("/Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/resource/TestPic.png");
+using namespace cv;
 
-    if (image.empty()) {
-        std::cerr << "Error: Could not read the image." << std::endl;
-        return -1;
+int main()
+{
+    // 显示图片
+    Mat img = imread("/Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/resource/TestPic.png");
+    namedWindow("pic", WINDOW_NORMAL);
+    resizeWindow("pic", 600, 600);
+    imshow("pic", img);
+
+    int key = 0;
+    while (key != 27) // 27 corresponds to the ASCII code for the 'Esc' key
+        key = waitKey(); // Wait indefinitely for a key press
+    destroyWindow("pic");
+
+    // 显示视频
+    VideoCapture cap;
+    Mat frame;
+    cap.open("/Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/resource/TestVideo.mp4");
+    namedWindow("vid", WINDOW_AUTOSIZE);
+
+    key = 0;
+    while (key != 27)
+    {
+        cap.read(frame);
+        imshow("vid", frame);
+        key = waitKey(40);
     }
+    destroyWindow("vid");
 
-    cv::imshow("Image", image);
-    cv::waitKey(1);
-
-    // (2) 加载一个视频
-    cv::VideoCapture video("/Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/resource/TestVideo.mp4");
-
-    if (!video.isOpened()) {
-        std::cerr << "Error: Could not open the video." << std::endl;
-        return -1;
-    }
-
-    while (true) {
-        cv::Mat frame;
-        video >> frame;
-
-        if (frame.empty()) {
-            std::cerr << "Error: Could not read a frame from the video." << std::endl;
-            break;
+    // 打开摄像头
+    cap.open(0); // 0 represents the default camera
+    if (cap.isOpened())
+    {
+        namedWindow("cam", WINDOW_AUTOSIZE);
+        key = 0;
+        while (key != 27)
+        {
+            cap.read(frame);
+            imshow("cam", frame);
+            key = waitKey(40);
         }
-
-        cv::imshow("Video", frame);
-
-        char key = cv::waitKey(30);
-        if (key == 27) {  // Press 'Esc' to exit
-            break;
-        }
+        destroyWindow("cam");
+    }
+    else
+    {
+        std::cout << "No camera available." << std::endl;
     }
 
-    // (3) 开启计算机摄像头
-    cv::VideoCapture webcam(0);
-
-    if (!webcam.isOpened()) {
-        std::cerr << "Error: Could not open the webcam." << std::endl;
-        return -1;
-    }
-
-    while (true) {
-        cv::Mat frame;
-        webcam >> frame;
-
-        if (frame.empty()) {
-            std::cerr << "Error: Could not read a frame from the webcam." << std::endl;
-            break;
-        }
-
-        cv::imshow("Webcam", frame);
-
-        char key = cv::waitKey(30);
-        if (key == 27) {  // Press 'Esc' to exit
-            break;
-        }
-    }
+    // 释放摄像头对象
+    cap.release();
 
     return 0;
 }

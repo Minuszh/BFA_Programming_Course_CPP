@@ -20,6 +20,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		1213142D2B31B946006195B2 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +38,6 @@
 		1205EEE32AFDC3A70090312A /* 04_5_Scholarship.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_5_Scholarship.cpp; sourceTree = "<group>"; };
 		1205EEE52AFDC3EF0090312A /* 04_6_JosephProblem.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_6_JosephProblem.cpp; sourceTree = "<group>"; };
 		1205EEE82AFDC4480090312A /* 04_7_EightQueens.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_7_EightQueens.cpp; sourceTree = "<group>"; };
-		120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BFA_Programming_Course_CPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		120F302B2ACAC6FA000FF402 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1221AC562B16406400C80E8C /* Lecture_08.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_08.md; sourceTree = "<group>"; };
 		1221AC572B16408D00C80E8C /* 05_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 05_1.cpp; sourceTree = "<group>"; };
@@ -55,6 +64,7 @@
 		128B84542B2DCEF500CA4A74 /* 07_4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 07_4.cpp; sourceTree = "<group>"; };
 		12BAE3702AFDCDD800AA2519 /* Lecture_06.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Lecture_06.md; sourceTree = "<group>"; };
 		12BC82C32AD250F500553610 /* Playground.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Playground.cpp; sourceTree = SOURCE_ROOT; };
+		12BE55012B31BD41004848AD /* BFA_Programming_Course_CPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = BFA_Programming_Course_CPP; path = /Users/minus/cpp/BFA_Programming_Course_CPP/build/Debug/BFA_Programming_Course_CPP; sourceTree = "<absolute>"; };
 		12D5BAF52AF49139001A9839 /* 04_1_TowerOfHanoi.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_1_TowerOfHanoi.cpp; sourceTree = "<group>"; };
 		12D5BAF72AF491C4001A9839 /* 04_2_FibonacciSequence.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = 04_2_FibonacciSequence.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,16 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				120F302A2ACAC6FA000FF402 /* BFA_Programming_Course_CPP */,
-				120F30292ACAC6FA000FF402 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		120F30292ACAC6FA000FF402 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		120F302A2ACAC6FA000FF402 /* BFA_Programming_Course_CPP */ = {
@@ -196,6 +197,7 @@
 				120F30252ACAC6FA000FF402 /* Frameworks */,
 				120F30262ACAC6FA000FF402 /* CopyFiles */,
 				124502792AE663E8009F09A7 /* Sources */,
+				1213142D2B31B946006195B2 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -203,7 +205,7 @@
 			);
 			name = BFA_Programming_Course_CPP;
 			productName = BFA_Programming_Course_CPP;
-			productReference = 120F30282ACAC6FA000FF402 /* BFA_Programming_Course_CPP */;
+			productReference = 12BE55012B31BD41004848AD /* BFA_Programming_Course_CPP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +231,7 @@
 				Base,
 			);
 			mainGroup = 120F301F2ACAC6FA000FF402;
-			productRefGroup = 120F30292ACAC6FA000FF402 /* Products */;
+			productRefGroup = 120F301F2ACAC6FA000FF402;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -288,10 +290,13 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/Frameworks/opencv2.framework;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -302,14 +307,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /opt/homebrew/opt/opencv/include/opencv4;
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/opt/opencv/lib;
+				HEADER_SEARCH_PATHS = /Users/minus/cpp/opencv2.framework/Headers;
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -352,21 +358,25 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = /Users/minus/cpp/BFA_Programming_Course_CPP/BFA_Programming_Course_CPP/Frameworks/opencv2.framework;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = /opt/homebrew/opt/opencv/include/opencv4;
-				LIBRARY_SEARCH_PATHS = /opt/homebrew/opt/opencv/lib;
+				HEADER_SEARCH_PATHS = /Users/minus/cpp/opencv2.framework/Headers;
+				LIBRARY_SEARCH_PATHS = "";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				OTHER_LDFLAGS = "";
+				"OTHER_LDFLAGS[arch=*]" = "";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -377,6 +387,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGU4T2Z384;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BFA_Programming_Course_CPP",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "/opt/homebrew/opt/opencv/include/**";
 				LIBRARY_SEARCH_PATHS = "/opt/homebrew/opt/opencv/lib/**";
 				"OTHER_LDFLAGS[arch=*]" = (
@@ -449,6 +464,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XGU4T2Z384;
 				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BFA_Programming_Course_CPP",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = "/opt/homebrew/opt/opencv/include/**";
 				LIBRARY_SEARCH_PATHS = "/opt/homebrew/opt/opencv/lib/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
